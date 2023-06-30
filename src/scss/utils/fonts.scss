@@ -1,8 +1,8 @@
-// 
-// @font-face {
-//   font-family: Geometria;
-//   font-style: normal;
-//   font-weight: 400;
-//   font-display: auto;
-//   src: local("Geometria"), url("../fonts/Geometria.woff2") format("woff2"), url("../fonts/Geometria.woff") format("woff");
-// }
+@font-face {
+  font-family: "Druk Wide Cyr";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/DrukWideCy-Bold.woff2") format("woff2"),
+    url("../fonts/DrukWideCy-Bold.woff") format("woff");
+}

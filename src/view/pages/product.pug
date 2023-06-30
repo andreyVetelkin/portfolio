@@ -7,4 +7,58 @@ block variables
 
 block content
   .main
+    .container
+      ul.card-navigation
+        li.card-navigation__item: a(href="#") Каталог
+        li.card-navigation__item /
+        li.card-navigation__item: a(href="#") Колодцы
+        li.card-navigation__item /
+        li.card-navigation__item: a(href="#") Кольца стеновые
 
+      .card-page
+        .card-page__img
+          .card-page__img-main: img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+          .card-page__img-wrapper
+            .card-page__img-second
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+            .card-page__img-third
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+        .card-page__info
+          .card-page__info-title Металлоформа <br> кс 7.3
+          .card-page__info-number Артикул 454572409
+          .card-page__info-btn: a(href="#") Узнать цену
+          .card-page__info-descr
+          p Стальная форма предназначается для изготовления железобетонных стеновых колец марки КС 10.6 (Серия 3.900.1-14 Вып. №1; Серия 3.900-3 Вып. №7). Кольца используются для строительства подземной части колодцев различных коммуникаций.
+          p Металлоформа может быть выполнена в двух вариантах.
+          p Первый вариант формы выполняется без поддона для стендового формования изделий. Эксплуатация данной формы предусматривает её разбор до полного набора прочности бетона.
+          p Второй вариант формы выполняется с нижним кольцом в качестве поддона. Эксплуатация данной формы предусматривает её разбор после полного набора прочности бетона.
+          p Форма круглых железобетонных стеновых колец марки КС 10.6 соответствует ГОСТ 25781-2018, ГОСТ 25878-2018, ГОСТ 27204-87.
+          .card-page__info-prop
+            .card-page__info-prop-text Детали и характеристики
+            .card-page__info-prop-icon.btn
+              +ico('Union')
+          .card-page__info-equipment
+            .card-page__info-equipment-text Комплектация
+            .card-page__info-equipment-icon.btn
+              +ico('Union')
+      .simular
+        .simular-title Похожие товары
+        .simular-goods
+          .simular-goods__item
+            .simular-goods__item-img
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+            .simular-goods__item-title Металлоформа КС 7.3
+            .simular-goods__item-number Артикул 454572409
+          .simular-goods__item
+            .simular-goods__item-img
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+            .simular-goods__item-title Металлоформа КС 7.3
+            .simular-goods__item-number Артикул 454572409
+          .simular-goods__item
+            .simular-goods__item-img
+              img(loading="lazy" src="tpl/img/card.jpg" srcset="tpl/img/card@2x.jpg 2x" alt="Золотой пояс")
+            .simular-goods__item-title Металлоформа КС 7.3
+            .simular-goods__item-number Артикул 454572409
+        

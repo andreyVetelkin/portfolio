@@ -1,0 +1,162 @@
+.main {
+  padding-top: 36px;
+  width: 100%;
+}
+
+.card-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 351px;
+  .card-navigation__item {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.card-page {
+  padding-top: 36px;
+  width: 100%;
+  min-height: 1144px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-page__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .card-page__img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    img {
+      max-width: 370px;
+    }
+  }
+}
+
+.card-page__info {
+  padding: 0 64px;
+}
+
+.card-page__info-title {
+  color: var(--font-color, #0c0c0c);
+  font-size: 40px;
+  font-family: Druk Wide Cyr;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.card-page__info-number {
+  color: var(--font-color, #0c0c0c);
+  font-size: 16px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
+  margin-top: 8px;
+}
+
+.card-page__info-btn {
+  margin: 0 auto;
+  margin-top: 32px;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 88px;
+  background: $sec;
+  text-align: center;
+  color: var(--body-bg, #fff);
+  font-size: 14px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  a:hover {
+    color: #fff;
+  }
+}
+
+.card-page__info-descr {
+  margin-top: 32px;
+  color: var(--font-color, #0c0c0c);
+  font-size: 20px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.card-page__info-prop,
+.card-page__info-equipment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color, #0c0c0c);
+  font-size: 20px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.card-page__info-prop {
+  margin-top: 56px;
+}
+
+.card-page__info-equipment {
+  margin-top: 48px;
+}
+
+.simular {
+  padding-top: 72px;
+  width: 100%;
+}
+
+.simular-title {
+  color: $sec;
+  font-size: 40px;
+  font-family: Druk Wide Cyr;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.simular-goods {
+  margin-top: 184px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__item img {
+    width: 480px;
+  }
+  &__item-title {
+    color: var(--font-color, #0c0c0c);
+    font-size: 24px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  &__item-number {
+    color: var(--font-color-addl, #9b9b9b);
+    font-size: 16px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
