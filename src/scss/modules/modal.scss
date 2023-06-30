@@ -1,0 +1,154 @@
+.modal-open {
+	overflow: hidden;
+}
+
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.modal .close {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	transition: $cubic;
+	top: 20px;
+	right: 20px;
+	color: $main;
+	width: 24px;
+	height: 24px;
+
+	.ico {
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		color: $sec;
+	}
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	outline: 0;
+	background-color: transparent;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	p {
+		font-size: 14px;
+	}
+
+	.modal-dialog {
+		background-color: transparent;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.modal-title {
+	font-size: 4.8rem;
+	line-height: 1;
+	width: 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	};
+}
+
+.modal-dialog {
+	position: relative;
+	width: auto;
+	background-color: #fff;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+	.container {
+		height: 100%;
+	}
+}
+
+.modal.fade .modal-dialog {
+	transition: transform 0.3s ease-out;
+	transform: translate(0, -50px);
+}
+@media (prefers-reduced-motion: reduce) {
+	.modal.fade .modal-dialog {
+		transition: none;
+	}
+}
+
+.modal.show .modal-dialog {
+	-webkit-transform: none;
+	transform: none;
+}
+
+.modal-dialog-scrollable .modal-body {
+	overflow-y: auto;
+}
+
+.modal-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	outline: 0;
+	padding: 60px 16px;
+	min-height: 100%;
+	pointer-events: auto;
+	background-color: #fff;
+	color: $main;
+	min-height: unset;
+	margin: auto;
+	max-width: 100%;
+	height: 100%;
+	@include min_screenL {
+		padding: 40px 80px;
+	}
+}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background: $main;
+}
+
+.modal-backdrop.fade {
+	opacity: 0;
+}
+
+.modal-backdrop.show {
+	opacity: 0.5;
+}
+
+.form-error {
+	color: #DC5846;
+	font-size: 12px;
+	display: none;
+}
+
+input[type="file"] {
+	position: absolute!important;
+	width: 1px!important;
+	height: 1px!important;
+	opacity: 0!important;
+	padding: 0 !important;
+}

@@ -1,0 +1,2 @@
+mixin ico(id, defult='tpl/sprites/sprite.svg')
+	span.ico(class='ico--'+id+'')&attributes(attributes): svg: use(xlink:href= defult + '#' + id)

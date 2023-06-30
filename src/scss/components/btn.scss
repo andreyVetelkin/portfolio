@@ -1,0 +1,29 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	border: 0;
+	padding: 13px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	white-space: nowrap;
+	transition: $cubic;
+	-webkit-appearance: none;
+	border-radius: 30px;
+
+	&[disabled] {}
+
+	&.hide {
+		display: none;
+	}
+}
+
+button {
+	padding: 0;
+	color: inherit;
+}
