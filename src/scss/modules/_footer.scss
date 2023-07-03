@@ -1,3 +1,8 @@
+footer {
+  @include screenS {
+    margin: 0;
+  }
+}
 .footer-text {
   margin-top: 68px;
   display: flex;
@@ -8,4 +13,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  @include screenS {
+    background-color: #0c0c0c;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 16px;
+  }
 }

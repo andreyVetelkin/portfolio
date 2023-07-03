@@ -6,7 +6,7 @@
 .card-navigation {
   display: flex;
   justify-content: space-between;
-  width: 351px;
+  max-width: 351px;
   .card-navigation__item {
     color: #9b9b9b;
     font-size: 16px;
@@ -14,6 +14,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    @include screenS {
+      font-size: 14px;
+    }
   }
 }
 
@@ -23,6 +26,10 @@
   min-height: 1144px;
   display: flex;
   justify-content: space-between;
+  @include screenS {
+    width: 343px;
+    flex-direction: column;
+  }
 }
 
 .card-page__img {
@@ -30,17 +37,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include screenXL {
+    justify-content: start;
+    align-items: start;
+  }
+  .card-page__img-main {
+    img {
+      @include screenXL {
+        width: 500px;
+      }
+      @include screenS {
+        width: 343px;
+      }
+    }
+  }
   .card-page__img-wrapper {
     display: flex;
     justify-content: space-between;
+    @include screenS {
+      flex-wrap: wrap;
+    }
     img {
       max-width: 370px;
+      @include screenS {
+        width: 343px;
+      }
     }
   }
 }
 
 .card-page__info {
   padding: 0 64px;
+  @include screenS {
+    padding: 0 16px;
+  }
 }
 
 .card-page__info-title {
@@ -51,6 +81,10 @@
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
+  @include screenS {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .card-page__info-number {
@@ -62,6 +96,10 @@
   line-height: 24px;
   opacity: 0.5;
   margin-top: 8px;
+  @include screenS {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .card-page__info-btn {
@@ -85,6 +123,9 @@
   a:hover {
     color: #fff;
   }
+  @include screenS {
+    height: 64px;
+  }
 }
 
 .card-page__info-descr {
@@ -95,6 +136,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  @include screenS {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 24px;
+  }
 }
 
 .card-page__info-prop,
@@ -108,19 +154,32 @@
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+  @include screenS {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .card-page__info-prop {
   margin-top: 56px;
+  @include screenS {
+    margin-top: 16px;
+  }
 }
 
 .card-page__info-equipment {
   margin-top: 48px;
+  @include screenS {
+    margin-top: 16px;
+  }
 }
 
 .simular {
   padding-top: 72px;
   width: 100%;
+  @include screenXL {
+    padding-top: 16px;
+  }
 }
 
 .simular-title {
@@ -131,6 +190,10 @@
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
+  @include screenS {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .simular-goods {
@@ -140,8 +203,17 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  @include screenXL {
+    margin-top: 54px;
+  }
+  @include screenS {
+    margin-top: 24px;
+  }
   &__item img {
     width: 480px;
+    @include screenS {
+      width: 275px;
+    }
   }
   &__item-title {
     color: var(--font-color, #0c0c0c);
@@ -160,3 +232,4 @@
     line-height: 24px;
   }
 }
+

@@ -2,6 +2,9 @@ header {
   background-color: $main;
   padding: 20px 0;
   width: 100%;
+  @include screenM {
+    padding: 16px 0;
+  }
 }
 
 .header-wrapper {
@@ -24,14 +27,20 @@ header {
   display: flex;
   justify-content: space-between;
   width: 884px;
+  @include screenXL {
+    width: 56px;
+  }
   .header-menu__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include screenXL {
+      display: none;
+    }
     &:nth-child(4) {
-        background-color: $btn;
-        border-radius: 8px;
-        width: 208px;
+      background-color: $btn;
+      border-radius: 8px;
+      width: 208px;
     }
     .header-menu__item-icon {
       width: 40px;
@@ -48,8 +57,9 @@ header {
   }
 }
 
+
 .header-menu__item-text {
-    margin-left: 8px;
+  margin-left: 8px;
   .header-menu__item-text-title {
     color: #fff;
     font-size: 14px;
@@ -84,7 +94,7 @@ header {
     height: 2px;
     top: 45%;
     transform: translate(-50%, -50%);
-	left: 50%;
+    left: 50%;
     transition: all 0.5s;
     background-color: #fff;
   }
