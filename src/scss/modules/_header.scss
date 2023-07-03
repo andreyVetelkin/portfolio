@@ -1,0 +1,104 @@
+header {
+  background-color: $main;
+  padding: 20px 0;
+  width: 100%;
+  @include screenM {
+    padding: 16px 0;
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 184px;
+  color: #ffe900;
+  font-size: 24px;
+  font-family: Druk Wide Cyr;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 884px;
+  @include screenXL {
+    width: 56px;
+  }
+  .header-menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include screenXL {
+      display: none;
+    }
+    &:nth-child(4) {
+      background-color: $btn;
+      border-radius: 8px;
+      width: 208px;
+    }
+    .header-menu__item-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      &:last-child {
+        background-color: $btn;
+      }
+    }
+  }
+}
+
+
+.header-menu__item-text {
+  margin-left: 8px;
+  .header-menu__item-text-title {
+    color: #fff;
+    font-size: 14px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .header-menu__item-text-subtitle {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 14px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.header-menu__burger {
+  cursor: pointer;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border: 1px solid #205ce1;
+  border-radius: 8px;
+  span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: all 0.5s;
+    background-color: #fff;
+  }
+  span:nth-of-type(2) {
+    top: calc(50% + 3px);
+  }
+}

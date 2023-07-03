@@ -1,0 +1,235 @@
+.main {
+  padding-top: 36px;
+  width: 100%;
+}
+
+.card-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 351px;
+  .card-navigation__item {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    @include screenS {
+      font-size: 14px;
+    }
+  }
+}
+
+.card-page {
+  padding-top: 36px;
+  width: 100%;
+  min-height: 1144px;
+  display: flex;
+  justify-content: space-between;
+  @include screenS {
+    width: 343px;
+    flex-direction: column;
+  }
+}
+
+.card-page__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include screenXL {
+    justify-content: start;
+    align-items: start;
+  }
+  .card-page__img-main {
+    img {
+      @include screenXL {
+        width: 500px;
+      }
+      @include screenS {
+        width: 343px;
+      }
+    }
+  }
+  .card-page__img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include screenS {
+      flex-wrap: wrap;
+    }
+    img {
+      max-width: 370px;
+      @include screenS {
+        width: 343px;
+      }
+    }
+  }
+}
+
+.card-page__info {
+  padding: 0 64px;
+  @include screenS {
+    padding: 0 16px;
+  }
+}
+
+.card-page__info-title {
+  color: var(--font-color, #0c0c0c);
+  font-size: 40px;
+  font-family: Druk Wide Cyr;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  @include screenS {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.card-page__info-number {
+  color: var(--font-color, #0c0c0c);
+  font-size: 16px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
+  margin-top: 8px;
+  @include screenS {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.card-page__info-btn {
+  margin: 0 auto;
+  margin-top: 32px;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 88px;
+  background: $sec;
+  text-align: center;
+  color: var(--body-bg, #fff);
+  font-size: 14px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  a:hover {
+    color: #fff;
+  }
+  @include screenS {
+    height: 64px;
+  }
+}
+
+.card-page__info-descr {
+  margin-top: 32px;
+  color: var(--font-color, #0c0c0c);
+  font-size: 20px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  @include screenS {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 24px;
+  }
+}
+
+.card-page__info-prop,
+.card-page__info-equipment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color, #0c0c0c);
+  font-size: 20px;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  @include screenS {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.card-page__info-prop {
+  margin-top: 56px;
+  @include screenS {
+    margin-top: 16px;
+  }
+}
+
+.card-page__info-equipment {
+  margin-top: 48px;
+  @include screenS {
+    margin-top: 16px;
+  }
+}
+
+.simular {
+  padding-top: 72px;
+  width: 100%;
+  @include screenXL {
+    padding-top: 16px;
+  }
+}
+
+.simular-title {
+  color: $sec;
+  font-size: 40px;
+  font-family: Druk Wide Cyr;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  @include screenS {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.simular-goods {
+  margin-top: 184px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include screenXL {
+    margin-top: 54px;
+  }
+  @include screenS {
+    margin-top: 24px;
+  }
+  &__item img {
+    width: 480px;
+    @include screenS {
+      width: 275px;
+    }
+  }
+  &__item-title {
+    color: var(--font-color, #0c0c0c);
+    font-size: 24px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  &__item-number {
+    color: var(--font-color-addl, #9b9b9b);
+    font-size: 16px;
+    font-family: Golos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+

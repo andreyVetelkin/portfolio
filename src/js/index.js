@@ -16,6 +16,7 @@ import Swiper, {
   Pagination
 } from 'swiper'
 
+
 import "bootstrap/js/dist/modal.js";
 $(document).ready(function() {
   
@@ -60,3 +61,10 @@ $(document).ready(function() {
 
 
 });
+
+// const swiper = new Swiper('.swiper', {
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
