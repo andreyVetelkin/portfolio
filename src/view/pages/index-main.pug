@@ -3,8 +3,190 @@ extends ../layout/main
 block variables
   - var title = 'Главная';
   - var description = 'Описание';
+  - var pageClass = 'front__page';
 
 
 block content
   .main
+    .section.promo-section
+      .container
+        .promo-section__title Создавая для вас <strong>металлоформы</strong>, мы&nbsp;вместе строим города
+      .promo-section__img: img(src="tpl/img/promo_bg.png" srcset="tpl/img/promo_bg@2.png 2x" loading="lazy" alt="")
     
+    .section
+      .container
+        .section-bordered
+          .section__title О компании
+          .about-section
+            .about-section-col
+              .about-section__text Мы занимаемся производством металлоформ для ЖБК уже более 20 лет,  и наше имя известно как в России, так и за её пределами.
+              .about-section__btn: +ico('services-btn')
+            .about-section-col-stat
+              .about-section-col-stat__item._small-block._bordered
+                .about-stat-item__number <strong>730</strong>
+                .about-stat-item__note позиций в каталоге
+              .about-section-col-stat__item._big-block
+                .about-stat-item__number <strong>1500</strong> изготовленных изделий
+                .about-stat-item__note для 230 предприятий
+              .about-section-col-stat__item._small-block
+                .about-stat-item__number <strong>24+</strong>
+                .about-stat-item__note года на рынке
+                .about-stat-item__image: img(src="tpl/img/about-man.jpg" loading="lazy" alt="")
+
+    .section
+      .container
+          .section__title Каталог продукции
+          .catalog-section
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Балки
+                ul.catalog-item__menu
+                  li: a(href="#") Балки лестничные
+                  li: a(href="#") Балки мостовые
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Дорожные плиты
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Лестничные площадки
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Плиты
+                ul.catalog-item__menu
+                  li: a(href="#") Плиты перекрытия лотков
+                  li: a(href="#") Плиты различного назначения
+                  li: a(href="#") Плиты ребристые
+                  li: a(href="#") Стенки откосные
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Блоки
+                ul.catalog-item__menu
+                  li: a(href="#") Блоки различного назначения
+                  li: a(href="#") Блоки фундаментные ФБС
+                  li: a(href="#") Контурные блоки
+                  li: a(href="#") Лотки для блоков
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Звенья
+                ul.catalog-item__menu
+                  li: a(href="#") Звенья конические
+                  li: a(href="#") Звенья цилиндрические
+                  li: a(href="#") Звенья прямоугольные
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Лестничные ступени
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Бордюрные камни
+                ul.catalog-item__menu
+                  li: a(href="#") Камни бортовые БВ
+                  li: a(href="#") Камни бортовые БЛ
+                  li: a(href="#") Камни бортовые БУ/БУП
+                  li: a(href="#") Камни бортовые БК
+                  li: a(href="#") Камни бортовые БР
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Колодцы
+                ul.catalog-item__menu
+                  li: a(href="#") Кольца опорные
+                  li: a(href="#") Кольца стеновые
+                  li: a(href="#") Плиты днища
+                  li: a(href="#") Плиты опорные
+                  li: a(href="#") Плиты перекрытия
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Лотки
+                ul.catalog-item__menu
+                  li: a(href="#") Лотки Л
+                  li: a(href="#") Лотки ЛК
+                  li: a(href="#") Лотки различного назначения
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Ригель
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Вибропригруз
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Лестничные марши
+                ul.catalog-item__menu
+                  li: a(href="#") Вертикальная формовка
+                  li: a(href="#") Горизонтальная формовка
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Ограждения
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Сваи
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Перемычки
+                ul.catalog-item__menu
+                  li: a(href="#") Перемычки ПБ
+                  li: a(href="#") Перемычки ПП
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Световые опоры
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Плита тротуарная
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Утяжелители
+            .catalog-section-item
+              .catalog-item__wrapper
+                a.catalog-item__title(href="#") Фундаменты ленточные
+
+
+
+    .section
+      .container
+        .section-bordered
+          .section__title Производство
+          .production-section
+            .production-section-item
+              .production-item__description Описание процесса в несколько строк, потому что пользователь не любит читать.
+              .production-item__image
+                img(src="tpl/img/production.jpg" alt="" loading="lazy")
+
+    .section
+      .container
+          .section__title Услуги
+          .services-section
+            mixin services(title, description)
+              a.services-section-item(href="#")
+                .services-item__wrapper
+                  .services-item__title= title
+                  .services-item__description= description
+            +services('Вальцевание', 'Изготовление цилиндрических и конических обечаек из листового металла, а так же их радиусные сегменты на трехвалковых вальцах.')
+            +services('Гибка', 'Изготовление гнутых деталей из листового проката. Гибка выполняется на прессе листогибочном в универсальном V-образном штампе.')
+            +services('Резка', 'Резка листового металла на установке плазменной резки INCUT-200HA с ЧПУ. Изготовим вам детали из углеродистой, легированной стали, цветных металлов и сплавов.')
+            +services('Рубка', 'Рубка деталей на гильотине гидравлической DURMA STB 3016. Максимально допустимый размер обрабатываемой заготовки составляет 6000х3000х16 мм.')
+            +services('Сварка', 'Сварке деталей, узлов и сборочных единиц по вашему техническому заданию и чертежам. Сварка ручная дуговая, полуавтоматическая.')
+            +services('Токарная и фрезерная обработка', 'Изготовление деталей из углеродистой, легированной стали, цветных металлов и сплавов.')
+
+
+    .section
+      .container
+          .section-bordered
+            .section__title Ждем ваших заявок и предложений
+            .contacts-section
+              .contacts-section-info
+                .contacts-info__phone: a(href="tel:#") +7 (927) 133-33-37
+                .contacts-info__email: a(href="mail:#") mail@zolotoy-poyas.ru
+              .contacts-section-form
+                .contacts-form-side
+                  .form-item
+                    input(name="name" type="text" placeholder="Ваше имя")
+                  .form-item
+                    input(name="email" type="text" placeholder="Электронная почта")
+                  .form-item
+                    input(name="phone" type="text" placeholder="+7" data-phone="")
+                .contacts-form-side
+                  .form-item
+                    input(name="company" type="text" placeholder="Наименование вашей компании")
+                  .form-item
+                    textarea(name="comment" placeholder="Комментарий")
+                button(type="submit") Отправить сообщение
+
+

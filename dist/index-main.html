@@ -30,40 +30,32 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="my-app">
     <link rel="yandex-tableau-widget" href="tpl/favicons/yandex-browser-manifest.json">
-    <script defer src="tpl/js/vendor.js?b7599178288c8ca1afc9"></script>
-    <script defer src="tpl/js/app.js?727c4063a16eb10a550d"></script>
-    <link href="tpl/css/app.css?17a8141296bb610faa79" rel="stylesheet">
+    <script defer src="tpl/js/vendor.js?35053c7aabe3d5ac6163"></script>
+    <script defer src="tpl/js/app.js?81136cc81915eed73bb1"></script>
+    <link href="tpl/css/app.css?369cfb9a46bd4196d03e" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="front__page">
     <header>
       <div class="container">
-        <div class="header-wrapper">
-          <div class="header-logo">Золотой Пояс</div>
+        <div class="header-wrapper"><a class="header-logo" href="index.html">Золотой Пояс</a>
           <div class="header-menu">
-            <div class="header-menu__item"><button class="header-menu__item-icon"><span class="ico ico--catalog"><svg><use xlink:href="tpl/sprites/sprite.svg#catalog"></use></svg></span></button>
-              <div class="header-menu__item-text">
+            <div class="header-menu__item"><button class="header-menu__item-icon"><span class="ico ico--catalog"><svg><use xlink:href="tpl/sprites/sprite.svg#catalog"></use></svg></span></button><a class="header-menu__item-text" href="#">
                 <div class="header-menu__item-text-title">Каталог продукции</div>
                 <div class="header-menu__item-text-subtitle">300 наименований</div>
-              </div>
-            </div>
-            <div class="header-menu__item"><button class="header-menu__item-icon"><span class="ico ico--contact"><svg><use xlink:href="tpl/sprites/sprite.svg#contact"></use></svg></span></button>
-              <div class="header-menu__item-text">
+              </a></div>
+            <div class="header-menu__item"><button class="header-menu__item-icon"><span class="ico ico--contact"><svg><use xlink:href="tpl/sprites/sprite.svg#contact"></use></svg></span></button><a class="header-menu__item-text" href="tel:#">
                 <div class="header-menu__item-text-title">Связаться с нами</div>
                 <div class="header-menu__item-text-subtitle">+7 (927) 133-33-37</div>
-              </div>
-            </div>
-            <div class="header-menu__item"><button class="header-menu__item-icon"><span class="ico ico--search"><svg><use xlink:href="tpl/sprites/sprite.svg#search"></use></svg></span></button>
-              <div class="header-menu__item-text">
+              </a></div>
+            <div class="header-menu__item"><button class="header-menu__item-icon"><span class="ico ico--search"><svg><use xlink:href="tpl/sprites/sprite.svg#search"></use></svg></span></button><a class="header-menu__item-text" href="#">
                 <div class="header-menu__item-text-title">Поиск</div>
                 <div class="header-menu__item-text-subtitle">По каталогу</div>
-              </div>
-            </div>
-            <div class="header-menu__item">
-              <div class="header-menu__item-text">
+              </a></div>
+            <div class="header-menu__item"><a class="header-menu__item-text" href="#">
                 <div class="header-menu__item-text-title">Скачать прайс</div>
                 <div class="header-menu__item-text-subtitle">PDF 15,MB</div>
-              </div>
+              </a>
               <div class="header-menu__item-icon"><span class="ico ico--arrow"><svg><use xlink:href="tpl/sprites/sprite.svg#arrow"></use></svg></span></div>
             </div>
             <div class="header-menu__burger"><span></span><span></span></div>
@@ -71,12 +63,244 @@
         </div>
       </div>
     </header>
-    <div class="main"></div>
+    <div class="main">
+      <div class="section promo-section">
+        <div class="container">
+          <div class="promo-section__title">Создавая для вас <strong>металлоформы</strong>, мы&nbsp;вместе строим города</div>
+        </div>
+        <div class="promo-section__img"><img src="tpl/img/promo_bg.png" srcset="tpl/img/promo_bg@2.png 2x" loading="lazy" alt=""></div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="section-bordered">
+            <div class="section__title">О компании</div>
+            <div class="about-section">
+              <div class="about-section-col">
+                <div class="about-section__text">Мы занимаемся производством металлоформ для ЖБК уже более 20 лет, и наше имя известно как в России, так и за её пределами.</div>
+                <div class="about-section__btn"><span class="ico ico--services-btn"><svg><use xlink:href="tpl/sprites/sprite.svg#services-btn"></use></svg></span></div>
+              </div>
+              <div class="about-section-col-stat">
+                <div class="about-section-col-stat__item _small-block _bordered">
+                  <div class="about-stat-item__number"><strong>730</strong></div>
+                  <div class="about-stat-item__note">позиций в каталоге</div>
+                </div>
+                <div class="about-section-col-stat__item _big-block">
+                  <div class="about-stat-item__number"><strong>1500</strong> изготовленных изделий</div>
+                  <div class="about-stat-item__note">для 230 предприятий</div>
+                </div>
+                <div class="about-section-col-stat__item _small-block">
+                  <div class="about-stat-item__number"><strong>24+</strong></div>
+                  <div class="about-stat-item__note">года на рынке</div>
+                  <div class="about-stat-item__image"><img src="tpl/img/about-man.jpg" loading="lazy" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="section__title">Каталог продукции</div>
+          <div class="catalog-section">
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Балки</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Балки лестничные</a></li>
+                  <li><a href="#">Балки мостовые</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Дорожные плиты</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Лестничные площадки</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Плиты</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Плиты перекрытия лотков</a></li>
+                  <li><a href="#">Плиты различного назначения</a></li>
+                  <li><a href="#">Плиты ребристые</a></li>
+                  <li><a href="#">Стенки откосные</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Блоки</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Блоки различного назначения</a></li>
+                  <li><a href="#">Блоки фундаментные ФБС</a></li>
+                  <li><a href="#">Контурные блоки</a></li>
+                  <li><a href="#">Лотки для блоков</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Звенья</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Звенья конические</a></li>
+                  <li><a href="#">Звенья цилиндрические</a></li>
+                  <li><a href="#">Звенья прямоугольные</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Лестничные ступени</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Бордюрные камни</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Камни бортовые БВ</a></li>
+                  <li><a href="#">Камни бортовые БЛ</a></li>
+                  <li><a href="#">Камни бортовые БУ/БУП</a></li>
+                  <li><a href="#">Камни бортовые БК</a></li>
+                  <li><a href="#">Камни бортовые БР</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Колодцы</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Кольца опорные</a></li>
+                  <li><a href="#">Кольца стеновые</a></li>
+                  <li><a href="#">Плиты днища</a></li>
+                  <li><a href="#">Плиты опорные</a></li>
+                  <li><a href="#">Плиты перекрытия</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Лотки</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Лотки Л</a></li>
+                  <li><a href="#">Лотки ЛК</a></li>
+                  <li><a href="#">Лотки различного назначения</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Ригель</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Вибропригруз</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Лестничные марши</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Вертикальная формовка</a></li>
+                  <li><a href="#">Горизонтальная формовка</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Ограждения</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Сваи</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Перемычки</a>
+                <ul class="catalog-item__menu">
+                  <li><a href="#">Перемычки ПБ</a></li>
+                  <li><a href="#">Перемычки ПП</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Световые опоры</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Плита тротуарная</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Утяжелители</a></div>
+            </div>
+            <div class="catalog-section-item">
+              <div class="catalog-item__wrapper"><a class="catalog-item__title" href="#">Фундаменты ленточные</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="section-bordered">
+            <div class="section__title">Производство</div>
+            <div class="production-section">
+              <div class="production-section-item">
+                <div class="production-item__description">Описание процесса в несколько строк, потому что пользователь не любит читать.</div>
+                <div class="production-item__image"><img src="tpl/img/production.jpg" alt="" loading="lazy"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="section__title">Услуги</div>
+          <div class="services-section"><a class="services-section-item" href="#">
+              <div class="services-item__wrapper">
+                <div class="services-item__title">Вальцевание</div>
+                <div class="services-item__description">Изготовление цилиндрических и конических обечаек из листового металла, а так же их радиусные сегменты на трехвалковых вальцах.</div>
+              </div>
+            </a><a class="services-section-item" href="#">
+              <div class="services-item__wrapper">
+                <div class="services-item__title">Гибка</div>
+                <div class="services-item__description">Изготовление гнутых деталей из листового проката. Гибка выполняется на прессе листогибочном в универсальном V-образном штампе.</div>
+              </div>
+            </a><a class="services-section-item" href="#">
+              <div class="services-item__wrapper">
+                <div class="services-item__title">Резка</div>
+                <div class="services-item__description">Резка листового металла на установке плазменной резки INCUT-200HA с ЧПУ. Изготовим вам детали из углеродистой, легированной стали, цветных металлов и сплавов.</div>
+              </div>
+            </a><a class="services-section-item" href="#">
+              <div class="services-item__wrapper">
+                <div class="services-item__title">Рубка</div>
+                <div class="services-item__description">Рубка деталей на гильотине гидравлической DURMA STB 3016. Максимально допустимый размер обрабатываемой заготовки составляет 6000х3000х16 мм.</div>
+              </div>
+            </a><a class="services-section-item" href="#">
+              <div class="services-item__wrapper">
+                <div class="services-item__title">Сварка</div>
+                <div class="services-item__description">Сварке деталей, узлов и сборочных единиц по вашему техническому заданию и чертежам. Сварка ручная дуговая, полуавтоматическая.</div>
+              </div>
+            </a><a class="services-section-item" href="#">
+              <div class="services-item__wrapper">
+                <div class="services-item__title">Токарная и фрезерная обработка</div>
+                <div class="services-item__description">Изготовление деталей из углеродистой, легированной стали, цветных металлов и сплавов.</div>
+              </div>
+            </a></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="section-bordered">
+            <div class="section__title">Ждем ваших заявок и предложений</div>
+            <div class="contacts-section">
+              <div class="contacts-section-info">
+                <div class="contacts-info__phone"><a href="tel:#">+7 (927) 133-33-37</a></div>
+                <div class="contacts-info__email"><a href="mail:#">mail@zolotoy-poyas.ru</a></div>
+              </div>
+              <div class="contacts-section-form">
+                <div class="contacts-form-side">
+                  <div class="form-item"><input name="name" type="text" placeholder="Ваше имя"></div>
+                  <div class="form-item"><input name="email" type="text" placeholder="Электронная почта"></div>
+                  <div class="form-item"><input name="phone" type="text" placeholder="+7" data-phone=""></div>
+                </div>
+                <div class="contacts-form-side">
+                  <div class="form-item"><input name="company" type="text" placeholder="Наименование вашей компании"></div>
+                  <div class="form-item"><textarea name="comment" placeholder="Комментарий"></textarea></div>
+                </div><button type="submit">Отправить сообщение</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="footer-text">
-          <p>ООО «Золотой пояс», 2011−2023</p>
-          <p>Создание сайта – nopreset</p>
+          <div>ООО «Золотой пояс», 2011−2023</div>
+          <div><a href="">Создание сайта – nopreset</a></div>
         </div>
       </div>
     </footer>

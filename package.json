@@ -57,6 +57,8 @@
     "@fancyapps/ui": "^5.0.15",
     "air-datepicker": "^3.3.1",
     "bootstrap": "^4.6.1",
+    "isotope-layout": "^3.0.6",
+    "isotope-packery": "^2.0.1",
     "jquery": "^3.6.1",
     "select2": "^4.1.0-rc.0",
     "swiper": "^9.2.0",

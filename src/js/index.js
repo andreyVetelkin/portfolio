@@ -1,13 +1,12 @@
-import {
-  Fancybox,
-  Carousel,
-  Panzoom
-} from "@fancyapps/ui";
+// import {
+//   Fancybox,
+//   Carousel,
+//   Panzoom
+// } from "@fancyapps/ui";
 
 // import inputmask from './libs/jquery.inputmask.min.js';
 
 import $ from 'jquery';
-
 
 import Swiper, {
   Navigation,
@@ -16,8 +15,21 @@ import Swiper, {
   Pagination
 } from 'swiper'
 
+// import "bootstrap/js/dist/modal.js";
 
-import "bootstrap/js/dist/modal.js";
+let Isotope = require('isotope-layout');
+
+let iso = new Isotope( '.catalog-section', {
+  itemSelector: '.catalog-section-item',
+  percentPosition: true,
+});
+
+let about_isotop = new Isotope( '.about-section-col-stat', {
+  itemSelector: '.about-section-col-stat__item',
+  percentPosition: true,
+});
+
+
 $(document).ready(function() {
   
   setTimeout(function () {
@@ -57,7 +69,6 @@ $(document).ready(function() {
 
   window.addEventListener('mousedown', handleInputDevice, false);
   window.addEventListener('keydown', handleInputDevice, false);
-
 
 
 });
