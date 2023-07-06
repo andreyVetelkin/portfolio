@@ -1,11 +1,19 @@
 .name{
     text-transform: none;
     font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .artikl{
     opacity: .5;
     font-size: 16px;
+    @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 
 .mini-card-container{
@@ -17,6 +25,10 @@
     border-radius: 16px;
     background:  #FFF;
     width: 480px;
+    @media (max-width: 768px) {
+        width: 291px;
+        height: auto;
+    }
     margin-right: auto;
 }
 
@@ -26,5 +38,7 @@
 
 .mini-card-container img {
     height: 324px;
-    
+    @media (max-width: 768px) {
+        height: 206px;
+    }
 }

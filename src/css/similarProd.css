@@ -5,14 +5,21 @@
     
 }
 
+
 .section-similar{
     background-color: #E4E4E4;
     margin-top: 32px;
     padding: 0;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .prod-container{
-    width: 1600px;
+    width: 100vw;
     display: block;
 }
 
@@ -25,13 +32,31 @@
     line-height: 48px;
     text-transform: uppercase;
     margin-top: 32px;
+
+    @media (max-width: 768px) {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+    
 }
 
 .section-title{
     height: 224px;
+    @media (max-width: 768px) {
+        height: auto;
+    }
 }
 
 .other-prods{
     display: flex;
     margin: 32px 0;
+}
+
+.similar-container{
+    width: 1600px;
+    @media (max-width: 768px) {
+        width: auto;
+    }
 }

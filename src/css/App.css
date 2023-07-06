@@ -9,9 +9,8 @@
     font-style: normal;
     font-display: swap;
 }
-section, header, footer, main {
+section, header, footer {
     font-family: Golos Reg;
-    width:100%;
     margin: 0;
     padding: 20px 0;
     display: flex;
@@ -19,6 +18,17 @@ section, header, footer, main {
     
 }
 
+.main-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        padding: 0 16px;
+    }
+}
+
 main{
     padding-bottom: 0;
+
 }

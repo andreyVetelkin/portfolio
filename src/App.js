@@ -14,9 +14,10 @@ function App() {
         <div className="main-card-container">
           <Intro/>
           <MainContentBox/>
+          <SimilarProd/>
         </div>
       </main>
-      <SimilarProd/>
+      
       <Footer/>
     </>
   );

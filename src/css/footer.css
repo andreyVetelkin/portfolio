@@ -2,15 +2,27 @@ footer .container{
     
     display: flex;
     justify-content: space-between;
-    width: 1600px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    };
+    width:1600px;
     
 }
 footer{
     margin-top: 32px;
+    @media (max-width: 768px) {
+        background-color: #0C0C0C;
+        padding: 16px;
+    }
 }
 
 footer .container p{
     
     font-size: 16px;
     text-transform: none;
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+    }
 }

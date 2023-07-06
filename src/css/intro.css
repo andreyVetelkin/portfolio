@@ -5,6 +5,10 @@ a {
 
 .breadcrumbs-section{
     display:inline-block;
+    @media (max-width: 768px) {
+        width: 100vw;
+    }
+    width: 1600px;
 }
 
 .breadcrumbs {

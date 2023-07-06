@@ -36,27 +36,37 @@ button {
 header {
     background-color: #0C0C0C;
     
+    @media (max-width: 768px) {
+        padding-left: 16px 
+    }
     
 }
 
-.header-container{
+.header-container {
     background-color: #0C0C0C;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1600px;
+    max-width: 1600px;
+    width: 100%;
 }
+
 
 .logo {
     font-family: 'Druk Wide Cy';
     color: #FFE900;
     font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
     width: 184px;
+
+    
 }
 
 nav {
@@ -67,6 +77,10 @@ nav {
     display: flex;
     margin: 0;
     gap: 10px; /* Расстояние между элементами */
+    
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-item {
