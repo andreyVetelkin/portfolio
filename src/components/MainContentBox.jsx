@@ -16,12 +16,12 @@ function MainContentBox() {
     <section className='content-container'>   
         <div className="card">
             <div className="images">
-                <img src="./img/image1.png" alt="Big Image" className="big-image" />
+                <img src="img/image1.png" alt="Big Image" className="big-image" />
                 <div className="small-images">
-                <img src="./img/image1.png" alt="Small Image 1" className="small-image" />
-                <img src="./img/image2.png" alt="Small Image 2" className="small-image" />
-                <img src="./img/image1.png" alt="Small Image 3" className="small-image" />
-                <img src="./img/image2.png" alt="Small Image 4" className="small-image" />
+                <img src="img/image1.png" alt="Small Image 1" className="small-image" />
+                <img src="img/image2.png" alt="Small Image 2" className="small-image" />
+                <img src="img/image1.png" alt="Small Image 3" className="small-image" />
+                <img src="img/image2.png" alt="Small Image 4" className="small-image" />
                 </div>
             </div>
             <div className="content">
@@ -42,7 +42,7 @@ function MainContentBox() {
                 <ul className="content-list">
                 <li>
                     Детали и характеристики
-                    <img onClick={toggleDetails} src="./img/plus.svg" alt="" />
+                    <img onClick={toggleDetails} src="img/plus.svg" alt="" />
                 </li>
                 {showDetails && (
                         <li className="details-window animate-details">
@@ -54,7 +54,7 @@ function MainContentBox() {
                     )}
                 <li>
                     Комплектация 
-                    <img onClick={toggleComplite} src="./img/plus.svg" alt="" />
+                    <img onClick={toggleComplite} src="img/plus.svg" alt="" />
                 </li>
                 {showComplite && (
                         <li className="details-window animate-details">

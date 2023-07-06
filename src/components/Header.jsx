@@ -11,7 +11,7 @@ function Header() {
                         <li className="menu-item">
                             <button>
                                 <div className="icon">
-                                    <img className='icon-img' src="./img/catalog_icon.svg" alt="catalog" />
+                                    <img className='icon-img' src="img/catalog_icon.svg" alt="catalog" />
                                 </div>
                                 <div className="menu-item-info">
                                     <p>каталог продукции</p>
@@ -23,7 +23,7 @@ function Header() {
                         <li className="menu-item">
                         <button>
                                 <div className="icon">
-                                    <img className='icon-img' src="./img/contact_icon.svg" alt="contact" />
+                                    <img className='icon-img' src="img/contact_icon.svg" alt="contact" />
                                 </div>
                                 <div className="menu-item-info">
                                     <p>связаться с нами</p>
@@ -35,7 +35,7 @@ function Header() {
                         <li className="menu-item">
                         <button>
                                 <div className="icon">
-                                    <img className='icon-img' src="./img/search_icon.svg" alt="search" />
+                                    <img className='icon-img' src="img/search_icon.svg" alt="search" />
                                 </div>
                                 <div className="menu-item-info">
                                     <p>поиск</p>
@@ -50,7 +50,7 @@ function Header() {
                                     <p>скачать прайс</p>
                                     <p className='gray-text'>PDF 15,MB</p>  
                                 </div>
-                                <img className='icon-img' src="./img/arrow.svg" alt="download price pdf" />
+                                <img className='icon-img' src="img/arrow.svg" alt="download price pdf" />
                             </button>
                         </li>
                     </ul>
