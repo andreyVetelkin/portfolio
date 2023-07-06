@@ -1,0 +1,30 @@
+.name{
+    text-transform: none;
+    font-size: 24px;
+}
+
+.artikl{
+    opacity: .5;
+    font-size: 16px;
+}
+
+.mini-card-container{
+    cursor: pointer;
+    display: flex;
+    padding: 8px 8px 32px 8px;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 16px;
+    background:  #FFF;
+    width: 480px;
+    margin-right: auto;
+}
+
+.info{
+    padding: 0 16px;
+}
+
+.mini-card-container img {
+    height: 324px;
+    
+}

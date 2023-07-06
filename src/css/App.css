@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Golos Reg';
+    src: url('../fonts/GolosText-Regular.woff2') format('woff2'),
+        url('../fonts/GolosText-Regular.woff') format('woff');
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-display: swap;
+}
+section, header, footer, main {
+    font-family: Golos Reg;
+    width:100%;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main{
+    padding-bottom: 0;
+}

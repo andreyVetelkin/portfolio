@@ -1,0 +1,16 @@
+footer .container{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+    
+}
+footer{
+    margin-top: 32px;
+}
+
+footer .container p{
+    
+    font-size: 16px;
+    text-transform: none;
+}

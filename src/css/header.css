@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Druk Wide Cy';
+    src: url('../fonts/DrukWideCy-Bold.woff2') format('woff2'),
+        url('../fonts/DrukWideCy-Bold.woff') format('woff');
+    
+}
+
+@font-face {
+    font-family: 'Golos Reg';
+    src: url('../fonts/GolosText-Regular.woff2') format('woff2'),
+        url('../fonts/GolosText-Regular.woff') format('woff');
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    
+    font-style: normal;
+    font-display: swap;
+}
+
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #0C0C0C;
+    
+    
+}
+
+.header-container{
+    background-color: #0C0C0C;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+}
+
+.logo {
+    font-family: 'Druk Wide Cy';
+    color: #FFE900;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 184px;
+}
+
+nav {
+    display: flex;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    gap: 10px; /* Расстояние между элементами */
+}
+
+.menu-item {
+    display: flex;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.menu-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4px 8px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.icon-img {
+    margin: 8px 8px 8px 8px;
+}
+
+.gray-text {
+    opacity: 0.5;
+}
+
+p{
+    font-family: Golos Reg;
+    text-transform: uppercase;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.download-price-button {
+    border-radius: 8px;
+    background: #205CE1;
+}
+
+.menu-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #205CE1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+.menu-icon::before {
+    margin-top: 4px;
+}
+
+.menu-icon::after {
+    margin-bottom: 4px;
+}
+

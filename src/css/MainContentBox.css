@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Druk Wide Cy';
+    src: url('../fonts/DrukWideCy-Bold.woff2') format('woff2'),
+        url('../fonts/DrukWideCy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+    
+    font-display: swap;
+}
+
+
+
+.content-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+}
+
+.card{
+    display: flex;
+    width: 1600px;
+    
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.big-image {
+    
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.small-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.small-image {
+    
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.product-title {
+    font-family: Druk Wide Cy;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.product-articul {
+    opacity: .5;
+}
+
+.price-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #205CE1;
+    color: white;
+    width: 100%;
+    border-radius: 88px;
+    height: 80px;
+    text-decoration: none;
+    text-align: center;
+    margin: 32px 0;
+    /* Дополнительные стили по необходимости */
+}
+
+.product-description {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform:none;
+}
+
+.content {
+    padding: 0 64px;
+}
+
+.content-list {
+    list-style-type: none;
+    margin: 32px 0;
+    padding:0;
+}
+
+.content-list li{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Golos Reg;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid  #E4E4E4;
+
+    
+}
+
+.details-window {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease, opacity 0.3s ease;
+  }
+  
+  .animate-details {
+    max-height:fit-content;
+    opacity: 1;
+  }
+  
+  .animate-complite {
+    max-height: fit-content;
+    opacity: 1;
+  }
+
+  
