@@ -58,5 +58,6 @@
     width: 1600px;
     @media (max-width: 768px) {
         width: auto;
+        padding: 0 16px;
     }
 }

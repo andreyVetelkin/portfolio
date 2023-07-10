@@ -17,6 +17,9 @@ function MainContentBox() {
         <div className="card">
             <div className="images">
                 <img src="img/image1.png" alt="Big Image" className="big-image" />
+                <img src="img/arrow_left.svg" alt="Предыдующая фотография" className='pred'/>
+                <img src="img/arrow_right.svg" alt="Следующая фотография" className='next'/>
+                
                 <div className="small-images">
                 <img src="img/image1.png" alt="Small Image 1" className="small-image" />
                 <img src="img/image2.png" alt="Small Image 2" className="small-image" />

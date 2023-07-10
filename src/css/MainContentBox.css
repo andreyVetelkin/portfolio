@@ -35,6 +35,8 @@
     justify-content: flex-start;
     @media (max-width: 768px) {
         justify-content: center;
+
+        position: relative;
     }
     
 }
@@ -46,7 +48,7 @@
         width: 100%;
         height: auto;
     }
-    margin-right: 8px;
+    
     margin-bottom: 8px;
 
 }
@@ -155,5 +157,30 @@
     max-height: fit-content;
     opacity: 1;
   }
+
+.next, .pred {
+    display: none;
+    width: 24px;
+    height: auto;
+    @media (max-width: 768px) {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+
+.next{
+    @media (max-width: 768px) {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+.pred{
+    @media (max-width: 768px) {
+        right: 40px;
+        bottom:12px;
+    }
+}
 
   
