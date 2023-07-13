@@ -16,20 +16,25 @@
     }
 }
 
-.mini-card-container{
+.mini-card-container {
     cursor: pointer;
     display: flex;
     padding: 8px 8px 32px 8px;
     flex-direction: column;
     gap: 32px;
     border-radius: 16px;
-    background:  #FFF;
-    width: 480px;
-    @media (max-width: 768px) {
-        width: 291px;
+    background: #FFF;
+    width: 100%;
+    max-width: 480px; 
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .mini-card-container {
+        width: 100%; 
+        max-width: 291px; 
         height: auto;
     }
-    margin-right: auto;
 }
 
 .info{

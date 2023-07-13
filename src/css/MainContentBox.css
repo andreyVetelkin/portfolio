@@ -56,16 +56,20 @@
 .small-images {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
     justify-content: flex-start;
     @media (max-width: 768px) {
-        display: none;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .small-image {
-    
-    margin-right: 8px;
+    width: calc(50% - px); /* Разделите ширину на две колонки и учтите внешние отступы */
     margin-bottom: 8px;
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .product-title {

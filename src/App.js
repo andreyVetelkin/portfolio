@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header/>
-      <main>
+       <main>
         <div className="main-card-container">
           <Intro/>
           <MainContentBox/>
@@ -18,7 +18,7 @@ function App() {
         </div>
       </main>
       
-      <Footer/>
+      <Footer/> 
     </>
   );
 }

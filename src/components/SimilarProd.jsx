@@ -10,6 +10,7 @@ function SimilarProd() {
                 <div className="other-prods">
                     <SimilarProdCard/>
                     
+                    
                 </div>
             </div>
                 
