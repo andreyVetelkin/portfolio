@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Druk Wide Cy';
-    src: url('fonts/DrukWideCy-Bold.woff2') format('woff2'),
-        url('fonts/DrukWideCy-Bold.woff') format('woff');
+    src: url('/public/fonts/DrukWideCy-Bold.woff2') format('woff2'),
+        url('/public/fonts/DrukWideCy-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-size: 40px;

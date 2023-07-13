@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Druk Wide Cy';
-    src: url('fonts/DrukWideCy-Bold.woff2') format('woff2'),
-        url('fonts/DrukWideCy-Bold.woff') format('woff');
+    src: url('/public/fonts/DrukWideCy-Bold.woff2') format('woff2'),
+        url('/public/fonts/DrukWideCy-Bold.woff') format('woff');
     
 }
 
 @font-face {
     font-family: 'Golos Reg';
-    src: url('fonts/GolosText-Regular.woff2') format('woff2'),
-        url('fonts/GolosText-Regular.woff') format('woff');
+    src: url('/public/fonts/GolosText-Regular.woff2') format('woff2'),
+        url('/public/fonts/GolosText-Regular.woff') format('woff');
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
