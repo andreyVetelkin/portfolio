@@ -1,0 +1,281 @@
+html {
+    overflow-x: hidden;
+}
+
+main {
+    background-image: url(../img/back.png);
+    color: white;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    main {
+        background-image: url(../img/mobile_back.png);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        
+        width: 270px;
+        height: 91px;
+    }
+
+    .container{
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container {
+    min-width: 90vw;
+}
+
+
+
+.nav-item {
+    padding: 0 15px 0;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+
+p{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.description{
+    font-size: 18px;
+
+
+}
+
+span {
+    color: #D89B57;
+}
+
+.num {
+    font-size: 60px;
+    line-height: 150%;
+    color: #F6B164;
+}
+
+@media (max-width: 768px) {
+
+    .description, p{
+        font-size: 12px;
+    }
+
+    .num{
+        font-size: 18px;
+    }
+
+    
+    
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #D89B57;
+    transition: .5s;
+}
+
+.pop {
+    position: fixed;
+    top: 150px;
+    right: -400px;
+    background-color: #2C2926;
+    border-radius: 10px;
+    border: 4px solid #474747;
+    width: 509px;
+    height: 207px;
+    transition: right 0.5s ease;
+    display: block;
+}
+
+
+
+.pop.show {
+    right: 10px;
+}
+
+
+.pop.hide {
+    right: -400px;
+}
+
+
+
+.pop-title {
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    margin-top: 170px;
+    margin-left: 30px;
+}
+
+
+.pop img {
+    position: absolute;
+    left: 30px;
+    top: 23px;
+    cursor: pointer;
+}
+
+.pop-desc button {
+    border-radius: 10px;
+    border: 3px solid #F6B164;
+    margin-right: 180px;
+    width: 194px;
+    height: 52px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .pop {
+        display: none;
+        right: -550px;
+        
+    }
+}
+
+.navbar-toggler{
+    border: none;
+    
+}
+
+.navbar-toggler img{
+    width: 56px;
+    height: 56px;
+}
+
+
+.online-entry{
+    border-radius: 10px;
+    border: 2px solid #D89B57;
+    background: #2C2926;
+    width: 135px;
+    height: 128px;
+    position: fixed;
+    right: 169px;
+    bottom: 260px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .online-entry {
+        display: none;
+    }
+}
+
+.online-entry p {
+    margin: auto;
+    margin-left: 27px;
+}
+
+.online-entry img {
+    margin: auto;
+    
+}
+
+.mobile-entry {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+    border-radius: 10px;
+    width: 316px;
+    height: 50px;
+    background-image: linear-gradient(to right, #F6B164, rgb(250, 249, 188));
+    margin: auto;
+    display: none;
+}
+@media (max-width: 768px) {
+    .mobile-entry {
+        display: block;
+        
+    }
+}
+
+
+.pop-up-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none;
+}
+
+.pop-up {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    color: #000;
+}
+
+.pop-up h3 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+.close-pop-up {
+    background-color: #F6B164;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+.close-pop-up:hover {
+    background-color: #D89B57;
+}
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}

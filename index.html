@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Test Task</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark mb-4">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand col" href="#">
+                        <img class="logo"  src="img/logo.svg" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <img class="logo"  src="img/menu.svg" alt="Logo">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mx-5 mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">УСЛУГИ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">МАРАФОНЫ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">РЕЗУЛЬТАТЫ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">СЕРТИФИКАТЫ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">БЛОГ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="info my-md-5  mx-2">
+                <div class="row pt-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p class="description " id="description-text">
+                            <span>BOGÁCH</span>
+                            – это место, где создается красота и здоровье. <br>Константин и Кристина знают,
+                            как исправить осанку, восстановить здоровье, сделать ваше лицо молодым,
+                            а тело красивым. <br><br> Нам доверяют и ходят семьями.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <p class="num">30000</p>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-9">
+                        <P>Сеансов с 2019 года</P>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <P class="num">5500</P>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-9">
+                        <P>Клиентов доверились<br> нам и остались довольны</P>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-3">
+                        <P class="num update-num">3000</P>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-9">
+                        <P class="update-text">Человек прошли наши<br> онлайн марафоны и<br> изменили свою жизнь</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-inline-flex col-md-4 text-end pop">
+                <div class="title">
+                    <img onclick="toggleGiftPopup()" src="img/arrow.svg" alt="">
+                    <p class="pop-title">ПОДАРОЧНЫЕ<br>BOGÁCH</p>
+                </div>
+
+                <div class="pop-desc">
+                    <p class="small-text"><span>ПОДАРИТЕ ВАШИМ БЛИЗКИМ ЗАБОТУ<br>ОБ ИХ ЗДОРОВЬЕ</span></p>
+                    <p class="medium-text">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</p>
+                    <button class="small-text">КУПИТЬ СЕРТИФИКАТ</button>
+                    <p class="small-text">МОЖНО ОПЛАТИТЬ ЛЮБУЮ УСЛУГУ</p>
+                </div>
+            </div>
+
+            <button class="online-entry"  onclick="toggleAppointmentPopup()">
+                <img src="./img/mini_logo.svg" alt="">
+                <p>ОНЛАЙН</p>
+                <p>ЗАПИСЬ</p>
+            </button>
+
+            <button class="mobile-entry"  onclick="toggleAppointmentPopup()">
+                ЗАПИСАТЬСЯ
+            </button>
+
+            <div class="pop-up-container">
+                <div class="pop-up">
+                    <button class="close-button" onclick="toggleAppointmentPopup()">&times;</button>
+                    <h3>Онлайн Запись</h3>
+                    <form id="appointment-form" action="send_mail.php" method="post">
+                        <div class="form-group">
+                            <label for="full-name">ФИО</label>
+                            <input type="text" id="full-name" name="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Номер телефона</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <button type="submit">Записаться</button>
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
